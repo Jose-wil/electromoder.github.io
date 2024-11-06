@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Pedidos - Celulares Modernos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        td img {
+            width: 100px;
+            height: auto;
+        }
+        .price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #27ae60;
+        }
+        form {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+        }
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body background="C:\Users\jose\Pictures\fondos\fondo1.jpg" margin>
+
+    <h1>Ofertas de Celulares Modernos</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Modelo</th>
+                <th>Imagen</th>
+                <th>Características</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody background="C:\Users\jose\Pictures\fondos\fondo9.jpg">
+            <tr>
+                <td>Samsung Galaxy S23</td>
+                <td><img src="C:\Users\jose\Pictures\para web\samsung.jpg" alt="Samsung Galaxy S23"></td>
+                <td>Pantalla 6.1", 128GB, 8GB RAM, Cámara 50MP</td>
+                <td class="price">3000bs</td>
+            </tr>
+            <tr>
+                <td>iPhone 14 Pro</td>
+                <td><img src="C:\Users\jose\Pictures\para web\phone14.jpg" alt="iPhone 14 Pro"></td>
+                <td>Pantalla 6.1", 128GB, 6GB RAM, Cámara 48MP</td>
+                <td class="price">2500bs</td>
+            </tr>
+            <tr>
+                <td>Xiaomi 13 Pro</td>
+                <td><img src="C:\Users\jose\Pictures\para web\xiaomi.jpg" alt="Xiaomi 13 Pro"></td>
+                <td>Pantalla 6.73", 256GB, 12GB RAM, Cámara 50MP</td>
+                <td class="price">2500bs</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Contáctanos y Haz Tu Pedido</h2>
+    <form action="#" method="POST">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefono">Número de Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="modelo">Selecciona el Modelo del Celular</label>
+        <select id="modelo" name="modelo" required>
+            <option value="samsung-galaxy-s23">Samsung Galaxy S23 - 3000bs</option>
+            <option value="iphone-14-pro">iPhone 14 Pro - 2500bs</option>
+            <option value="xiaomi-13-pro">Xiaomi 13 Pro - 2500bs</option>
+        </select>
+
+        <label for="mensaje">Mensaje o Consulta</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+
+</body>
+</html>
